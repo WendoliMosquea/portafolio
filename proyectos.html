@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="/styles/proyectos.css">
+    <script src="/app/adivina_numero.js" defer></script>
+    <script src="/app/amigo_secreto.js" defer></script>
+</head>
+<body>
+    <header class="cabecero">
+        <nav  class="menu_cabecero">
+            <a class="link_menu_cabecero" href="/index.html">Home</a>
+            <a class="link_menu_cabecero" href="/about.html">Sobre mí</a>
+            <a class="link_menu_cabecero" href="/proyectos.html">Proyectos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="granContenedor">
+            <h1 class="titulo_contenido">Mis proyectos de aprendizaje de programación.</h1>
+            <div class="contenedor">
+                <div class="contenido">
+                    <div class="contenedor_de_informaciones">
+                        <div class="contenedor_texto">
+                            <h2 class="subtitulos"></h2>
+                            <p class="texto_contenido"></p>
+                        </div>
+                        <input type="number" id="valorUsuario_juegoAdivina" min="${numeroMinimo}" max="${numeroMaximo}" class="contenido_input">
+                        <div class="contenedor_de_botones">
+                            <button onclick="verificarIntento();" class="contenido_boton">Intentar</button>
+                            <button onclick="reiniciarJuego()"; class="contenido_boton" id="reiniciarJuego_numero" disabled>Nuevo juego</button>
+                        </div>
+                    </div>
+                    <div class="contenido_imagen">
+                        <img src="/assets/imagen_salud_programacion.png" alt="Imagen de la relacion entre salud y programacion" class="imagen"/>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="contenido">
+                    <div class="contenedor_de_informaciones">
+                        <h2 class="subtitulos">Juego ¿Quien es tu amigo secreto?</h2>
+                        <p class="texto_contenido">Digite el nombre de sus amigos</p>
+                        <div class="input-wrapper">
+                            <input type="text" id="amigo" class="contenido_input" placeholder="Escribe un nombre">
+
+                        </div>
+                       
+                        <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+                        <ul id="resultado" class="result-list" aria-live="polite"></ul>
+            
+                        <div class="contenedor_de_botones">
+                            <button class="contenido_boton" onclick="agregarAmigo()" id="agregar">Añadir</button>
+                            <button class="contenido_boton" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                                Sortear amigo
+                            </button>
+                            <button onclick="reiniciarJuegoAmigo()"; class="contenido_boton" id="reiniciarJuego_amigo" disabled>Nuevo juego</button>
+                        </div>
+                    </div>
+                    <div class="contenido_imagen">
+                        <img src="/assets/imagen_salud_programacion_2.png" alt="Imagen que relaciona la salud y la programacion" class="imagen">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pie">
+        <p>© Derechos reservados: <span class="resaltado_texto">Dr. Wendoli Mosquea</span></p>
+    </footer>    
+</body>
+</html>
