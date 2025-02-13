@@ -199,6 +199,9 @@ body{
         width: auto;
         color: var(--color-texto);
     }
+    .contenido_boton{
+        color: var(--color-texto);
+    }
     .contenido_imagen{
         display: none;
     }
