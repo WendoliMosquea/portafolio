@@ -151,20 +151,42 @@ body{
 @media (max-width: 1200px){
 
     .cabecero{
+        width: auto;
         padding: 10%;
     }
     .menu_cabecero{
+        width: auto;
         justify-content: center;
+        padding: auto;
     }
     .contenedor{
+        width: auto;
         flex-direction: column-reverse;
+        flex-wrap: wrap;
         padding: 5%;
     }
     .contenido{
         width: auto;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .contenedor_de_botones{
+        width: auto;
+        flex-wrap: wrap;
+        width: auto;
     }
     .contenido_imagen{
         display: none;
+    }
+    .titulo_contenido{
+        text-align: center;
+    }
+    .subtitulos{
+        text-align: center;
+    }
+    .texto_contenido{
+        text-align: center;
     }
 }
 
