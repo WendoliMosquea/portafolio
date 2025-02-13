@@ -225,3 +225,8 @@ body{
         text-align: center;
     }
 }
+@media (max-width: 550px){
+    .menu_cabecero{
+        width: 80%;
+    }
+}
