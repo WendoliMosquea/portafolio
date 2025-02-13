@@ -197,7 +197,7 @@ body{
         width: auto;
         flex-wrap: wrap;
         width: auto;
-        color: #000000;
+        color: var(--color-texto);
     }
     .contenido_imagen{
         display: none;
@@ -211,13 +211,29 @@ body{
         color: transparent;
     }
     .titulo_contenido{
+        color: var(--color-texto);
+        font-weight: bold;
         text-align: center;
     }
     .subtitulos{
+        color: var(--color-texto);
+        font-weight: bold;
         text-align: center;
     }
     .texto_contenido{
+        color: var(--color-texto);
+        font-weight: bold;
         text-align: center;
     }
 }
-
+@media (max-width: 550px){
+    .menu_cabecero{
+        width: 80%;
+    }
+    .body{
+        color: var(--color-texto);
+    }
+    .texto_contenido{
+        background-color: white;
+    }
+}

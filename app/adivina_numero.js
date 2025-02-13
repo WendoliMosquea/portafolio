@@ -15,7 +15,7 @@ function verificarIntento(){
 
     if(numeroDelUsuario != '' && numeroDelUsuario >= numeroMinimo && numeroDelUsuario <= numeroMaximo){
         if(numeroDelUsuario === numeroSecreto){
-            asignarTextoElemento('p', `Acertaste el numero en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}`);
+            asignarTextoElemento('p', `Acertaste el numero en ${intentos} ${(intentos === 1) ? 'intento' : 'intentos'}`);
             document.getElementById('reiniciarJuego_numero').removeAttribute('disabled');
         }else{
             if(numeroDelUsuario < numeroSecreto){
