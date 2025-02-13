@@ -11,9 +11,9 @@
 <body>
     <header class="cabecero">
         <nav  class="menu_cabecero">
-            <a class="link_menu_cabecero" href="/index.html">Home</a>
-            <a class="link_menu_cabecero" href="/about.html">Sobre mí</a>
-            <a class="link_menu_cabecero" href="/proyectos.html">Proyectos</a>
+            <a class="link_menu_cabecero" href="/index.html"><h3>Home</h3></a>
+            <a class="link_menu_cabecero" href="/about.html"><h3>Sobre mí</h3></a>
+            <a class="link_menu_cabecero" href="/proyectos.html"><h3>Proyectos</h3></a>
         </nav>
     </header>
     <main>
@@ -44,12 +44,11 @@
                         <p class="texto_contenido">Digite el nombre de sus amigos</p>
                         <div class="input-wrapper">
                             <input type="text" id="amigo" class="contenido_input" placeholder="Escribe un nombre">
-
                         </div>
-                       
-                        <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-                        <ul id="resultado" class="result-list" aria-live="polite"></ul>
-            
+                        <div class="contenido">
+                            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+                            <ul id="resultado" class="result-list" aria-live="polite"></ul>    
+                        </div>           
                         <div class="contenedor_de_botones">
                             <button class="contenido_boton" onclick="agregarAmigo()" id="agregar">Añadir</button>
                             <button class="contenido_boton" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
