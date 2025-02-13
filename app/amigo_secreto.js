@@ -39,8 +39,13 @@ function elegirAmigo(lista) {
 function sortearAmigo() {
     let amigo = elegirAmigo(listaDeAmigos);
     let resultado = document.getElementById('resultado');
-    resultado.textContent = `Su amigo secreto es: ${amigo}`;
-    document.getElementById('reiniciarJuego_amigo').removeAttribute('disabled');
+    if(listaDeAmigos.length >= 1 ){
+        resultado.textContent = `Su amigo secreto es: ${amigo}`;
+        document.getElementById('reiniciarJuego_amigo').removeAttribute('disabled');
+    }else{
+        alert('favor ingresar al menos dos nombres de amigos');
+    }
+
 }
 
 function limpiarCampo() {
